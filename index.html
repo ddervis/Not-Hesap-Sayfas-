@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Not Hesapla</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="floating-label.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="bcbaa8d12061b044871a7726ad920ea6.png" alt="" width="200" height="200">
+            <h4>Ders Notu Hesaplma Sistemi</h4>
+            <p class="lead">Yüzdelik dilimlerini girdikten sonra notlarınızı giriniz!</p>
+        </div>
+        <div id="message">
+           
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <form class="form-signin" id="noteForm" name="form">
+                            <div class="col-3">
+                                <h5>Vize Yüzdelik Dilimi</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputVizeYuzdelik" class="form-control" min="0" max="100" autofocus required>
+                                    <label for="inputVizeYuzdelik"></label>
+                                </div>
+                                <h5>Alınan Not</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputVizeNot" class="form-control" min="0" max="100" required>
+                                    <label for="inputVizeNot"></label>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h5>Quiz 1 Yüzdelik Dilimi</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputQuizYuzdelik1" class="form-control" min="0" max="100" autofocus required>
+                                    <label for="inputQuizYuzdelik1"></label>
+                                </div>
+                                <h5>Alınan Not</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputQuizNot1" class="form-control" min="0" max="100" required>
+                                    <label for="inputQuizNot1"></label>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h5>Quiz 2 Yüzdelik Dilimi</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputQuizYuzdelik2" class="form-control" min="0" max="100" autofocus required>
+                                    <label for="inputQuizYuzdelik2"></label>
+                                </div>
+                                <h5>Alınan Not</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputQuizNot2" class="form-control" min="0" max="100" required>
+                                    <label for="inputQuizNot2"></label>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h5>Ödev Yüzdelik Dilimi</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputOdevYuzdelik" class="form-control" min="0" max="100" autofocus required>
+                                    <label for="inputOdevYuzdelik"></label>
+                                </div>
+                                <h5>Alınan Not</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputOdevNot" class="form-control" min="0" max="100" required>
+                                    <label for="inputOdevNot"></label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <h5>Final Yüzdelik Dilimi</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputFinalYuzdelik" class="form-control" min="0" max="100" autofocus required>
+                                    <label for="inputFinalYuzdelik"></label>
+                                </div>
+                                <h5>Alınan Not</h5>
+                                <div class="form-label-group">
+                                    <input type="number" id="inputFinalNot" class="form-control" min="0" max="100" required>
+                                    <label for="inputFinalNot"></label>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+                                    <div class="col-md-auto">
+                                        <button class="btn btn-lg btn-primary btn-block" type="submit">Hesapla</button>
+                                        <p class="mt-5 mb-3 text-muted text-center">&copy; 2018-2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id = "results">
+               
+            </div>
+        </div>
+        <div class="container">
+                <div class="row justify-content-md-center" id="lastResult">
+                   
+                </div>
+            </div>
+    </div>
+
+
+    <script src="calculate.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
